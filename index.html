@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather App By Mahdy Abrar Sharzy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1500' height='700' preserveAspectRatio='none' viewBox='0 0 1500 700'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1103%26quot%3b)' fill='none'%3e%3crect width='1500' height='700' x='0' y='0' fill='rgba(218%2c 230%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M261.618%2c123.629C291.689%2c126.381%2c325.989%2c125.258%2c342.824%2c100.189C361.051%2c73.048%2c356.723%2c36.081%2c338.753%2c8.77C322.354%2c-16.155%2c291.447%2c-23.866%2c261.618%2c-23.232C233.107%2c-22.626%2c203.38%2c-13.229%2c189.96%2c11.933C177.101%2c36.043%2c187.879%2c64.36%2c202.634%2c87.359C215.992%2c108.181%2c236.983%2c121.374%2c261.618%2c123.629' fill='rgba(203%2c 206%2c 254%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1124.389%2c642.25C1143.202%2c641.877%2c1154.44%2c622.922%2c1162.537%2c605.936C1169.328%2c591.689%2c1169.714%2c575.925%2c1162.756%2c561.759C1154.734%2c545.428%2c1142.579%2c528.685%2c1124.389%2c528.271C1105.739%2c527.847%2c1091.422%2c543.361%2c1082.872%2c559.941C1075.083%2c575.044%2c1075.877%2c592.329%2c1083.53%2c607.501C1092.16%2c624.611%2c1105.23%2c642.629%2c1124.389%2c642.25' fill='rgba(203%2c 206%2c 254%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1500.094%2c489.126C1551.64%2c489.561%2c1599.875%2c460.164%2c1623.483%2c414.34C1645.417%2c371.764%2c1632.164%2c322.136%2c1607.173%2c281.279C1583.46%2c242.511%2c1545.529%2c211.648%2c1500.094%2c212.618C1456.016%2c213.559%2c1423.336%2c247.884%2c1400.649%2c285.687C1377.075%2c324.968%2c1360.144%2c371.128%2c1380.263%2c412.286C1402.597%2c457.976%2c1449.239%2c488.696%2c1500.094%2c489.126' fill='rgba(203%2c 206%2c 254%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M547.043%2c664.461C607.341%2c665.664%2c671.254%2c646.373%2c700.197%2c593.462C728.322%2c542.047%2c706.203%2c480.741%2c674.504%2c431.449C645.813%2c386.834%2c600.087%2c355.229%2c547.043%2c355.307C494.129%2c355.385%2c447.963%2c386.759%2c420.23%2c431.823C390.914%2c479.46%2c377.346%2c538.445%2c404.117%2c587.557C431.87%2c638.469%2c489.07%2c663.305%2c547.043%2c664.461' fill='rgba(203%2c 206%2c 254%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M294.418%2c353.55C314.957%2c354.266%2c334.154%2c342.823%2c344.342%2c324.975C354.447%2c307.274%2c354.457%2c284.985%2c343.292%2c267.933C333.015%2c252.237%2c313.179%2c248.846%2c294.418%2c248.724C275.366%2c248.6%2c254.304%2c250.996%2c244.427%2c267.288C234.294%2c284.001%2c240.381%2c304.78%2c250.181%2c321.691C259.946%2c338.542%2c274.954%2c352.871%2c294.418%2c353.55' fill='rgba(203%2c 206%2c 254%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1103'%3e%3crect width='1500' height='700' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+            height: 100vh;
+        }
+
+        #city-name {
+            color: hsl(250, 18%, 19%);
+            text-shadow: 4px 4px 0 #fff;
+            font-size: 5.5rem;
+        }
+
+        .temperature {
+            font-size: 3rem;
+            color: hsl(250, 18%, 19%);
+        }
+
+        .lead {
+            color: #2B2839;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        #weather-icon{
+            background-color: #2B2839;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="search-value" type="text" class="form-control"
+                    placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" id="search-btn"
+                        onclick="searchTemperature()">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="http://openweathermap.org/img/wn/02d@2x.png">
+            <h1 id="city-name">City Name</h1>
+            <h3 class="temperature"><span id="temperature">0.00</span>&deg;C</h3>
+            <h1 id="lead" class="lead">Weather Condition</h1>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
